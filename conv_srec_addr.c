@@ -286,7 +286,7 @@ int main(int argc, char *argv[])
 	}
 	if ((argc == 3) && (strcmp(argv[2], "-") != 0)) {
 		if ((pfile = fopen(argv[2], "rb")) == NULL) {
-			fprintf(stderr, "ERROR: Cannot open %s\n", argv[1]);
+			fprintf(stderr, "ERROR: Cannot open %s\n", argv[2]);
 			return 3;
 		}
 	}
